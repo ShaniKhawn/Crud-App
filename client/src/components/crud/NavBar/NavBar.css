@@ -1,0 +1,37 @@
+.NavBar-Wrapper {
+  background-color: #2c1053;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  color: #fff;
+}
+
+.NavBar-Title {
+  font-weight: lighter;
+  padding-left: 1rem;
+}
+
+.NavBar-Link {
+  padding: 0.8rem;
+  color: #fff;
+  transition: 0.7s color ease;
+}
+
+.NavBar-Link:hover {
+  color: #fff;
+}
+
+.logout {
+  background-color: #ff3c00;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 32%;
+}
+
+.logout:hover {
+  background-color: #ff1100;
+}

@@ -1,0 +1,19 @@
+.Action-Button {
+    width: 60px;
+    height: 40px;
+    background-color: #3833A5;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .edit {
+    background-color: green;
+  }
+
+  .delete {
+    background-color: red;
+  }
