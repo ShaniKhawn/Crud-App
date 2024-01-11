@@ -78,8 +78,8 @@ const forgotPassword = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "shanikhawn145@gmail.com",
-        pass: "ednw mtrp tpkw mplm",
+        user: process.env.USER_EMAIL,
+        pass: process.env.USER_PASS,
       },
     });
 
@@ -95,7 +95,7 @@ const forgotPassword = async (req, res) => {
 
     await transporter.sendMail(mailOptions);
 
-    console.log("Email sent successfully");
+    // console.log("Email sent successfully");
     res.json({
       success: true,
       message: "Password reset email sent successfully",
@@ -109,6 +109,7 @@ const forgotPassword = async (req, res) => {
     });
   }
 };
+
 // reset password
 const resetPassword = async (req, res) => {
   const { resetToken, newPassword } = req.body;
